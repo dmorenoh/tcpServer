@@ -65,7 +65,7 @@ class SeverNIOTest {
                     buffer.clear()
                 }
             })
-            Thread.sleep(10)
+            Thread.sleep(50)
         }
         client.close()
     }
