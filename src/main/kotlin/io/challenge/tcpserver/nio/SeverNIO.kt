@@ -13,7 +13,7 @@ import java.util.concurrent.Executors
 private val logger = KotlinLogging.logger {}
 
 fun runServerAsync(port: Int) {
-    val threads = 3
+    val threads = 5
     val channelGroup = AsynchronousChannelGroup.withFixedThreadPool(threads, Executors.defaultThreadFactory())
     logger.info { "Starting Server" }
     AsynchronousServerSocketChannel.open(channelGroup)
